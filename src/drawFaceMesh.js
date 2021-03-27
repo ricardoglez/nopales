@@ -1,4 +1,5 @@
 export const drawFaceMesh = (predictions, w, h) => {
+    console.log('Predictions: ', predictions.length);
     var canvas, context;
     canvas = document.querySelector("#myCanvas");
     context = canvas.getContext("2d");
@@ -14,7 +15,7 @@ export const drawFaceMesh = (predictions, w, h) => {
           const [x, y] = keypoints[j];
   
           context.beginPath();
-          context.arc(x, y, 3 ,0 , 2*Math.PI);
+          context.arc(x, y, 1 ,0 , 2*Math.PI);
           context.stroke();
         }
       }
