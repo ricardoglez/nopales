@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>ML5 js dev week</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+	<link rel="stylesheet" href="./src/styles.css"></link> 
+
+</head>
+
+<body class="m-10">
+	<h1 class="title m-5"> ML with ml5 in js FaceMesh</h1>
+	<div class="box p-5">
+		<pre id="state"></pre>
+		<video id="myVideo" class="is-hidden"></video>
+		<canvas id="myCanvas"></canvas>
+		<div class="row m-5">
+			<button class="button is-success" id="iniciar-camara">Iniciar cámara</button>		
+			<button class="button is-danger" disabled id="detener-camara">Detener cámara</button>
+		</div>
+		<div class="row m-5">
+			<button id=iniciar-ml class="button is-primary" disabled> Iniciar ML</button>
+		</div>
+    <button id="testxState" class="button"> TEST </button>
+	</div>
+
+	<script src="src/index.js">
+	</script>
+</body>
+
+</html>
